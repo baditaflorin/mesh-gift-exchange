@@ -1,6 +1,6 @@
 export default async function giftExchangeScenario(a, b) {
-  await a.getByLabel("Your name").fill("Ari");
-  await b.getByLabel("Your name").fill("Bea");
+  await a.getByPlaceholder("Who are you gifting?").fill("Ari");
+  await b.getByPlaceholder("Who are you gifting?").fill("Bea");
   await a.getByLabel("Shared passphrase").fill("winter-lantern");
   await b.getByLabel("Shared passphrase").fill("winter-lantern");
   await a.waitForTimeout(1200);
